@@ -1,3 +1,4 @@
+
 html {
   box-sizing: border-box;
   font-family: "Libre Baskerville", serif;
@@ -21,17 +22,16 @@ body {
 img {
   display: block;
   width: 100%;
-  background-color: #259f95;
 }
 
-header {
+.title {
   background-image: url("../images/anchors.svg");
   color: #fff;
+  background-color: #1e7c74;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: normal;
   padding: 1rem;
-  background-color: #1e7c74;
 }
 
 header strong,
@@ -48,7 +48,7 @@ article div {
   padding: 1rem;
 }
 
-article header {
+.chapter-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,6 +56,7 @@ article header {
   background-image: none;
   border-radius: 0 0 6px 6px;
   color: #fff;
+  padding: 1rem;
 }
 
 h1 {
@@ -98,6 +99,11 @@ nav a:focus {
   background-color: #1e7c74;
 }
 
+nav a:focus {
+  outline: .2rem solid #000;
+  outline-offset: .1rem;
+}
+
 .icon {
   position: relative;
 }
@@ -125,7 +131,7 @@ article div :first-child {
   text-indent: 0;
 }
 
-article .body-copy :first-child::first-line {
+article .article :first-child::first-line {
   color: #1e7c74;
   font-style: italic;
 }
@@ -147,7 +153,7 @@ figcaption {
 }
 
 article footer {
-  background-color: #259f95;
+  background-color: #1e7c74;
   background-image: none;
   border-radius: 6px 6px 0 0;
   color: #fff;
