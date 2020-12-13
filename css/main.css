@@ -21,6 +21,7 @@ body {
 img {
   display: block;
   width: 100%;
+  background-color: #259f95;
 }
 
 header {
@@ -30,6 +31,7 @@ header {
   font-style: normal;
   font-weight: normal;
   padding: 1rem;
+  background-color: #1e7c74;
 }
 
 header strong,
@@ -86,7 +88,7 @@ nav a {
   border: 0;
   border-radius: 6px;
   color: #fff;
-  padding: 0.5rem;
+  padding: .5rem;
   width: 2.5rem;
   height: 2.5rem;
 }
@@ -123,7 +125,7 @@ article div :first-child {
   text-indent: 0;
 }
 
-article div :first-child::first-line {
+article .body-copy :first-child::first-line {
   color: #1e7c74;
   font-style: italic;
 }
@@ -157,4 +159,5 @@ footer {
   padding: 1rem;
   background-image: url("../images/anchors.svg");
   color: #fff;
+  background-color: #1e7c74;
 }
